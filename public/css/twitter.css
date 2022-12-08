@@ -7,12 +7,16 @@
 
     --color-blk:#000000;
     --color-blue: #1d9bf0;
+    --color-blue-disabled: #0e4d77;
     --color-white:#eff3f4;
     --color-off-white:#e7e9eade;
+    --color-white-disabled: #7f7f7f;
 
     --background-color-nav:#181818;
+    --background-color-allPage:#000000;
     
     --border-radius-circ:2.1vw;
+    --border-line: 1px #2f3336 solid;
 }
 
 * , *::before, *::after{
@@ -34,7 +38,7 @@ a{
 }
 body{
     min-height: 100vh;
-    background-color: #000000;
+    background-color: var(--background-color-allPage);
 }
 
 img,picture,svg,video,i{
@@ -59,6 +63,7 @@ img,picture,svg,video,i{
 .main{
     border: 1px #2f3336  solid;
     height: 100px;
+    height: fit-content;
 }
 
 
@@ -188,6 +193,76 @@ img,picture,svg,video,i{
     font-weight: var(--font-weight-med-light);
 }
 
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    padding:5px;
+    color: var(--color-white);
+    height: 40px;
+}
+.topBar > * {
+    height: fit-content;
+}
+
+.top-tweet-icon{
+   padding: 5px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+.top-tweet-icon:hover{
+    background-color: var(--background-color-nav);
+    border-radius: var(--border-radius-circ);
+    color: var(--color-white);
+    transition: all 0.3s ease;
+   
+}
+
+.middle-part-container{
+    border-bottom: var(--border-line);
+}
+.textArea-profile-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.tweetTextInput{
+    background-color: var(--background-color-allPage);
+    border: none;
+    outline: none;
+    font-size: 13px;
+    padding-left: 10px;
+    width: 100%;
+    color: var(--color-white);
+}
+
+.buttons-tweet{
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+.buttons-icons{
+display: flex;
+gap: 10px;
+padding: 10px 10px 10px 50px;
+width: 100%;
+}
+
+.tweet-button-input-div{
+    padding: 5px;
+}
+.tweet-button-input{
+    background-color: var(--color-blue-disabled);
+    color: var(--color-white-disabled);
+    border-radius: var(--border-radius-circ);
+    font-size: 10px;
+    font-weight: var(--font-weight-regular);
+    padding: 5px;
+    width: 50px;
+    margin-left: 26px;
+}
 @media only screen and (max-width: 842px) {
     .header-fixed {
      margin-left: 0;
