@@ -20,6 +20,9 @@
   <body>
     <div class="pageGridContainer">
       <div class="header">
+      <div class="header-absolute">
+
+     
         <div class="header-fixed">
           <div class="nav">
             <div class="logo-header">
@@ -27,6 +30,7 @@
                 src="../assets/twitter/twitterwhite.png"
                 class="icons"
                 style="width: 16px"
+                
               />
               <h1 class="item-text-div">abdulaziz</h1>
             </div>
@@ -127,7 +131,7 @@
               </div>
             </a>
             <div class="tweet-btn-div">
-              <button class="tweetBtn">Tweet</button>
+              <button class="tweetBtn"> <span class="new-tweet"><i class="fa-regular fa-pen-to-square"></i></span> <span class="tweet-btn-text">Tweet</span></button>
             </div>
           </div>
           <div class="account-div">
@@ -148,6 +152,18 @@
           </div>
         </div>
       </div>
+      </div>
+      <div class="small-user-details-container">   
+        <div class="small-user-details-wrapper">
+          <div class="profile-image-home-div">
+            <img src="../assets/twitter/profileimage.jpg" alt="user profile image" class="user-profile-tweet">
+            <h3 style="color: #ffff;">Home</h3>
+          </div>
+          <div>
+            <img src="../assets/twitter/icons/starsicon.png" style="padding-right: 10px;" alt="">
+          </div>
+        </div>
+      </div>
       <div class="main">
         <div class="topBar">
           <h2>Home</h2>
@@ -158,18 +174,33 @@
             <img
             src="../assets/twitter/profileimage.jpg"
             alt="user profile image"
-            style="width: 32px; height: 32px; border-radius: 50%"
+            class="user-profile-tweet"
           /> 
           <input type="text" class="tweetTextInput" placeholder="What's happening?">
           </div>
           <div class="buttons-tweet">
             <div class="buttons-icons">
-              <img src="../assets/twitter/icons/pictureicon.svg" alt="upload picture icon" width="13px" height="13px">
-              <img src="../assets/twitter/icons/gificon.png" alt="upload gif icon" width="13px" height="13px" >
-              <img src="../assets/twitter/icons/poolicon.png" alt="pool icon" width="13px" height="13px" >
-              <img src="../assets/twitter/icons/smileicon.png" alt="search emojis icon" width="13px" height="13px" >
-              <img src="../assets/twitter/icons/scheduleicon.png" alt="schedule icon" width="13px" height="13px" >
-              <img src="../assets/twitter/icons/visiticon.png" alt="visit icon" width="13px" height="13px" >
+              <div>
+
+                <img src="../assets/twitter/icons/pictureicon.svg" alt="upload picture icon" width="13px" height="13px">
+              </div>
+              <div>
+
+                <img src="../assets/twitter/icons/gificon.png" alt="upload gif icon" width="13px" height="13px" >
+              </div>
+              <div>
+                <img src="../assets/twitter/icons/poolicon.png" alt="pool icon" width="13px" height="13px" >
+              </div>
+              <div>
+                <img src="../assets/twitter/icons/smileicon.png" alt="search emojis icon" width="13px" height="13px" >
+              </div>
+              <div>
+                <img src="../assets/twitter/icons/scheduleicon.png" alt="schedule icon" width="13px" height="13px" >
+              </div>
+              <div>
+
+                <img src="../assets/twitter/icons/visiticon.png" alt="visit icon" width="13px" height="13px" >
+              </div>
             </div>
             <div class="tweet-button-input-div">
               <button class="tweet-button-input">Tweet</button>
@@ -177,20 +208,281 @@
           </div>
         </div>
         <div class="tweets">
-          <div>
+          <div class="tweet-wrapper">
             <div class="profileImage">
-
+              <img src="../assets/twitter/tweetsImages/eyadprofileimage.jpg" alt="user profile image" class="user-profile-tweet">
             </div>
             <div class="tweet-content">
-              <div class="tweet-text"></div>
-              <div class="tweet-image"></div>
+              <div class="username-div">
+                <h1>اياد الحمود <img src="../assets/twitter/icons/verifiedicon.png" width="11px" height="11px" style="display: inline;" alt=""></h1>
+                <span class="username-text">@Eyaaaad    . 23h</span>
+
+              </div>
+              <div class="tweet-text-wrapper">
+                <p class="tweet-text arabic-text" dir="rtl">
+                  نائبة في برلمان دولة لاتفيا وظّفت ساحرة اسمها "سانيتا بيتيري" لتعمل معها في البرلمان براتب شهري، وهي ساحرة شهيرة متخصصة في الشعوذة والطب غير التقليدي والطاقة.
+
+وعند سؤال النائبة قالت: ستساعدني الساحرة في فهم القضايا الاجتماعية والطالع ومعرفة هالة الجسم والتخلص من الطاقة السلبية.
+                </p>
+              </div>
+              <div class="tweet-image">
+                <div class="tweet-image-wrapper">
+                  <img src="../assets/twitter/tweetsImages/tweetImageEyad.jfif" alt="image about the tweet" class="tweet-image">
+                </div>
+              </div>
+              <div class="tweet-related-icons-div">
+                <div>
+                  <img src="../assets/twitter/icons/commenticon.svg" alt="">
+                  <span>232</span>
+                </div>
+                <div>
+                  <img src="../assets/twitter/icons/retweeticon.png" alt="">
+                  <span>233</span>
+
+                </div>
+                <div>
+
+                  <img src="../assets/twitter/icons/likeicon.png" alt="">
+                  <span>793</span>
+
+                </div>
+                <div>
+
+                  <img src="../assets/twitter/icons/shareicon.png" alt="">
+                </div>
+              </div>
             </div>
           </div>
+          
+          <div class="tweet-wrapper">
+            <div class="profileImage">
+              <img src="../assets/twitter/tweetsImages/kingsthenorthProfileImage.jpg" alt="user profile image" class="user-profile-tweet">
+            </div>
+            <div class="tweet-content">
+              <div class="username-div">
+                <h1>محمد | ASOIAF</h1>
+                <span class="username-text">@kingsthenorth    . 1h</span>
+
+              </div>
+              <div class="tweet-text-wrapper">
+                <p class="tweet-text arabic-text" dir="rtl">
+                 "صلّى عليكَ الله يا خَير الورى
+مَا أمطَرت مُزنٌ وما سَيلٌ جَرَى"ﷺ  
+                </p>
+              </div>
+              <!-- <div class="tweet-image">
+                <div class="tweet-image-wrapper">
+                  <img src="../assets/twitter/tweetsImages/tweetImageEyad.jfif" alt="image about the tweet" width="250" class="tweet-image">
+                </div>
+              </div> -->
+              <div class="tweet-related-icons-div">
+                <div>
+                  <img src="../assets/twitter/icons/commenticon.svg" alt="">
+                  <span></span>
+                </div>
+                <div>
+                  <img src="../assets/twitter/icons/retweeticon.png" alt="">
+                  <span>5</span>
+
+                </div>
+                <div>
+
+                  <img src="../assets/twitter/icons/likeicon.png" alt="">
+                  <span>22</span>
+
+                </div>
+                <div>
+
+                  <img src="../assets/twitter/icons/shareicon.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tweet-wrapper">
+            <div class="profileImage">
+              <img src="../assets/twitter/tweetsImages/eyadprofileimage.jpg" alt="user profile image" class="user-profile-tweet">
+            </div>
+            <div class="tweet-content">
+              <div class="username-div">
+                <h1>اياد الحمود <img src="../assets/twitter/icons/verifiedicon.png" width="11px" height="11px" style="display: inline;" alt=""></h1>
+                <span class="username-text">@Eyaaaad    . 23h</span>
+
+              </div>
+              <div class="tweet-text-wrapper">
+                <p class="tweet-text arabic-text" dir="rtl">
+                  بالتوفيق لأسود المغرب
+                </p>
+              </div>
+              <div class="tweet-image">
+                <div class="tweet-image-wrapper">
+                  <img src="../assets/twitter/tweetsImages/tweetImageEyadMor.jpeg" alt="image about the tweet" class="tweet-image">
+                </div>
+              </div>
+              <div class="tweet-related-icons-div">
+                <div>
+                  <img src="../assets/twitter/icons/commenticon.svg" alt="">
+                  <span>232</span>
+                </div>
+                <div>
+                  <img src="../assets/twitter/icons/retweeticon.png" alt="">
+                  <span>233</span>
+
+                </div>
+                <div>
+
+                  <img src="../assets/twitter/icons/likeicon.png" alt="">
+                  <span>793</span>
+
+                </div>
+                <div>
+
+                  <img src="../assets/twitter/icons/shareicon.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
-      <div>
+      <div class="small-user-details-container">
+      <div class="small-nav">
+        <a href=""><img src="../assets/twitter/icons/homeicon.png" width="35px" height="35px" alt=""></a>
+        <a href=""><i class="fa-solid fa-magnifying-glass" style="font-size: 30px; color: #FFFFFF;"></i></a>
+        <a href=""><img src="../assets/twitter/icons/notificationicon.png" width="35px" height="35px" alt=""></a>
+        <a href=""><img src="../assets/twitter/icons/messageicon.png" width="35px" height="35px" alt=""></a>
+      </div>
+    </div>
+      <div class="search-news-right-side">
+        <div class="search-news-wrapper">
         <!-- right side -->
-        <input type="text" />
+        <div class="search-div">
+          <div>
+
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </div>
+          <div>
+
+            <input type="text" class="search-input" placeholder="Search Twitter" />
+          </div>
+        </div>
+
+        <div class="trends-container">
+          <div>
+            <h1 class="trend-headtext">What’s happening</h1>
+          </div>
+          <div class="trend-wrapper">
+            <div>
+              <div class="news-tags">
+                <span>Sports</span>
+                <span>.</span>
+                <span>Live</span>
+              </div>
+              <div>
+                <h3 class="news-header">2022 FIFA World Cup</h3>
+              </div>
+            </div>
+            <div>
+              <img src="../assets/twitter/ballofTrend.jpg" class="ballTrend" alt="fifa ball">
+            </div>
+          </div>
+
+          <div class="trend-details">
+            <!-- first div -->
+            <div class="trend-onlyontwitter">
+              <span>Only on Twitter . Trending</span>
+              <i class="fa-solid fa-ellipsis dots"></i>
+            </div>
+            <div class="trend-title-div">
+              <h3 class="trend-title">امطار_الرياض#</h3>
+            </div>
+            <div class="tweet-count-trend">
+              <span>29.2K Tweets</span>
+            </div>
+          </div>
+
+          <div class="trend-details">
+            <!-- first div -->
+            <div class="trend-onlyontwitter">
+              <span>Trending in Saudi Arabia</span>
+              <i class="fa-solid fa-ellipsis dots"></i>
+            </div>
+            <div class="trend-title-div">
+              <h3 class="trend-title">الارجنتين_هولندا#</h3>
+            </div>
+            <div class="tweet-count-trend">
+              <span>87.4K Tweets</span>
+            </div>
+          </div>
+
+          <div class="trend-details">
+            <!-- first div -->
+            <div class="trend-onlyontwitter">
+              <span>Trending in Saudi Arabia</span>
+              <i class="fa-solid fa-ellipsis dots"></i>
+            </div>
+            <div class="trend-title-div">
+              <h3 class="trend-title">البرازيل_كرواتيا#</h3>
+            </div>
+            <div class="tweet-count-trend">
+              <span>87.6K Tweets</span>
+            </div>
+          </div>
+
+          <div class="trend-details">
+            <!-- first div -->
+            <div class="trend-onlyontwitter">
+              <span>Politics . Trending</span>
+              <i class="fa-solid fa-ellipsis dots"></i>
+            </div>
+            <div class="trend-title-div">
+              <h3 class="trend-title">محمد_بن_سلمان#</h3>
+            </div>
+            <div class="tweet-count-trend">
+              <span>36.1K Tweets</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="whoToFollow-container">
+          <div>
+            <h3 style="padding: 10px; margin:0;">Who to follow</h3>
+          </div>
+
+          <div class="user-profile-follow-div">
+            <div>
+              <img src="../assets/twitter/whoToFollowBanderitaX.jpg" class="user-profile-tweet" alt="">
+            </div>
+
+            <div class="user-tofollow-name">
+              <h3>Falcon BanderitaX <img src="../assets/twitter/icons/verifiedicon.png" width="12px" height="12px" style="display: inline;" /> </h3>
+              <p>@BanderitaX</p>
+            </div>
+
+            <div class="follow-whotofollow">
+              <button>Follow</button>
+            </div>
+          </div>
+          
+          <div class="user-profile-follow-div">
+            <div>
+              <img src="../assets/twitter/whoToFollowProgrammingLovers.jpg" class="user-profile-tweet" alt="">
+            </div>
+
+            <div class="user-tofollow-name">
+              <h3>شبكة محبي البرمجيات  <span style="margin-right: 12px;"></span>  </h3>
+              <p>@PrograminLovers</p>
+            </div>
+
+            <div class="follow-whotofollow">
+              <button>Follow</button>
+            </div>
+          </div>
+          
+        </div>
+        <h4 style="color: white; color: var(--color-white-disabled); font-size:x-small;">© 2022 Twitter, Inc. This website is only for educational purposes. </h4>
+        </div>
       </div>
     </div>
   </body>
