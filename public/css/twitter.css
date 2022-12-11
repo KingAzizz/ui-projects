@@ -99,6 +99,7 @@ img,picture,svg,video,i{
 
 .icons{
     width: 20px;
+    cursor: pointer;
 }
 
 .nav-item-wrapper{
@@ -218,6 +219,7 @@ img,picture,svg,video,i{
     display: flex;  
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .top-tweet-icon:hover{
     background-color: var(--background-color-nav);
@@ -323,7 +325,6 @@ width: 100%;
 }
 .tweet-image{
     border-radius: 16px;
-    max-width: 290px;
 }
 
 .arabic-text{
@@ -332,10 +333,8 @@ width: 100%;
 }
 .tweet-image-wrapper{
     margin-top: 5px;
-    border: 1.5px solid var(--background-color-nav);
     border-radius: 16px;
-    height: fit-content;
-    width: fit-content;
+    padding: 10px 20px 10px 10px;
    
 }
 
@@ -417,9 +416,7 @@ width: 100%;
 .trends-container{
     color: white;
     background-color: var(--background-color-search);
-    border-radius: 8px;
-    /* padding: 10px; */
-    
+    border-radius: 8px; 
 }
 .trend-headtext{
     font-size: 1.1rem;
@@ -432,6 +429,11 @@ width: 100%;
     gap: 30px;
     margin-bottom: 13px;
     padding: 10px;
+}
+
+.trend-wrapper:hover{
+    background-color: rgba(255, 255, 255, 0.03);
+    cursor: pointer;
 }
 .news-tags{
     font-size: 0.6rem;
@@ -518,6 +520,7 @@ padding: 10px;
     border-radius: var(--border-radius-circ);
     padding: 8px;
     min-width: 60px;
+    cursor: pointer;
 }
 
 .small-nav{ 
@@ -529,19 +532,15 @@ padding: 10px;
 .small-user-details-container{
     display: none;
 }
-@media only screen and (max-width: 940px) {
-    .header-fixed {
-     /* margin-left: 50px; */
-    }
 
+
+
+@media only screen and (max-width: 940px) {
     .logo-header{
         width: 10vw;
     }
     .nav-item-wrapper{
         width: 10vw;
-    }
-    .header-fixed {
-     /* right:0; */
     }
     .item-text-div{
         display: none;
