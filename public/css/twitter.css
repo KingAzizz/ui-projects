@@ -81,7 +81,7 @@ img,picture,svg,video,i{
 .header-fixed{
     position: fixed;
     top: 0;
-  
+  padding-top: 23px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,11 +94,12 @@ img,picture,svg,video,i{
     justify-content: center;
     align-items: center;
    gap: 16px;
+   margin-bottom: 10px;
 }
 
 
 .icons{
-    width: 20px;
+    width: 35px;
     cursor: pointer;
 }
 
@@ -107,7 +108,7 @@ img,picture,svg,video,i{
     justify-content: center;
     align-items: center;
     gap: 16px;
-    font-size: 0.90rem;
+    font-size: 1.3rem;
     font-weight: var(--font-weight-regular);
     padding: 10px;
 }
@@ -122,6 +123,10 @@ img,picture,svg,video,i{
     display: none;
     
 }
+.nav > a{
+    margin-bottom: 10px;
+    display: block;
+}
 .nav > a:first-child{
     color: var(--color-white);
     
@@ -134,7 +139,7 @@ img,picture,svg,video,i{
 
 .item-text-div{
     display: block;
-    width: clamp(70px,50%,113px);
+    width: clamp(70px,50%,94px);
  
 }
 /* .tweet-btn-div{
@@ -150,9 +155,10 @@ img,picture,svg,video,i{
     width: 100%;
     border-radius: var(--border-radius-circ);
     transition: 0.2s;
-    font-size: 12px;
+    font-size: 24px;
     font-weight: var(--font-weight-regular);
     cursor: pointer;
+    border: none;
 }
 .tweetBtn:hover{
     background-color: rgb(26, 140, 216);
@@ -189,7 +195,7 @@ img,picture,svg,video,i{
     margin-right: 20px;
 }
 .account-name > h2{
-    font-size: 0.725rem;
+    font-size: 1.5rem;
     height: 0px;
 
 
@@ -198,17 +204,17 @@ img,picture,svg,video,i{
    height: 0px;
    position: relative;
    bottom: 6px;
-    color: #575b5f;
-    font-size: 0.625rem;
+    color: var(--color-white-disabled);
+    font-size: 1rem;
     font-weight: var(--font-weight-med-light);
 }
 
 .topBar{
     display: flex;
     justify-content: space-between;
-    padding:5px;
+    padding:5px 5px 5px 10px;
     color: var(--color-white);
-    height: 40px;
+    height: 50px;
 }
 .topBar > * {
     height: fit-content;
@@ -243,7 +249,7 @@ img,picture,svg,video,i{
     background-color: var(--background-color-allPage);
     border: none;
     outline: none;
-    font-size: 13px;
+    font-size: 1.5rem;
     padding-left: 10px;
     width: 100%;
     color: var(--color-white);
@@ -271,10 +277,10 @@ width: 100%;
     background-color: var(--color-blue-disabled);
     color: var(--color-white-disabled);
     border-radius: var(--border-radius-circ);
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: var(--font-weight-regular);
     padding: 5px;
-    width: 50px;
+    width: 60px;
     margin-left: 26px;
     border: none;
 }
@@ -286,7 +292,7 @@ width: 100%;
     /* padding: 20px; */
 }
 .profileImage{
-    width: 50px;
+    width: 70px;
     padding: 10px;
 }
 
@@ -294,12 +300,13 @@ width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 13px;
+    font-size: 1.5rem;
     height: 20px;
+    padding: 20px 5px 5px 5px;
 }
 .username-text{
     margin-left: 3px;
-    font-size: 10.5px;
+    font-size: 1rem;
     color: var(--color-white-disabled);
 }
 .tweet-content{
@@ -309,19 +316,19 @@ width: 100%;
 }
 
 .user-profile-tweet{
-    max-width: 32px;
-    height: 32px;
+    max-width: 50px;
+    height: 50px;
     border-radius: 50%; 
     cursor: pointer;
 }
 
 .tweet-text-wrapper{
-    max-width: 290px;
+    padding: 10px;
 }
 .tweet-text{
     
     margin: 0;
-    font-size: 1rem
+    font-size: 1.5rem
 }
 .tweet-image{
     border-radius: 16px;
@@ -353,11 +360,11 @@ width: 100%;
 .tweet-related-icons-div > div > span{
     transition: .3s;
     color: #7F7F7F;
-     font-size: 10px; 
+     font-size: 1rem; 
      margin-left: 8px;
 }
 .tweet-related-icons-div > div > img{
-    width: 15px;
+    width: 24px;
 }
 .tweet-related-icons-div > div:nth-child(1):hover  span{
     color: var(--color-blue)
@@ -381,7 +388,7 @@ width: 100%;
 }
 .search-news-wrapper{
     position: fixed;
-    width: 260px;
+    width: 20%;
 }
 .search-div{
     border-radius: var(--border-radius-circ);
@@ -419,7 +426,7 @@ width: 100%;
     border-radius: 8px; 
 }
 .trend-headtext{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding: 10px;
 }
 .trend-wrapper{
@@ -436,12 +443,12 @@ width: 100%;
     cursor: pointer;
 }
 .news-tags{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     color: var(--color-white-disabled);
 }
 .news-header{
     margin: 3px 0 0 0;
-    font-size: 0.75rem;
+    font-size: 1.2rem;
 }
 .ballTrend{
     width: 68px;
@@ -461,7 +468,7 @@ width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.6rem;
+    font-size: 0.813rem;
     color: var(--color-white-disabled);
 }
 .trend-title-div{
@@ -473,13 +480,17 @@ width: 100%;
     float: right;
     margin: 0;
     font-family: var(--font-arabic);
+    font-size: 1.5rem;
+}
+.dots{
+    font-size: 1rem;
 }
 .dots:hover{
     cursor: pointer;
     color: var(--color-blue);
 }
 .tweet-count-trend{
-    font-size: 0.6rem;
+    font-size: 0.813rem;
     color: var(--color-white-disabled);
 }
 
@@ -505,24 +516,27 @@ padding: 10px;
     margin: 0;
 }
 .user-tofollow-name > h3{
-    font-size: 12px;
-    max-width: 113px ;
+    font-size: 0.938rem;
+    max-width: 142px ;
 }
 .user-tofollow-name > p{
-    font-size: 10px;
+    font-size: 0.813rem;
     color: var(--color-white-disabled);
 
 }
 .follow-whotofollow > button{
     outline: none;
     border: none;
-    font-size: 12px;
+    font-size: 0.938rem;
     border-radius: var(--border-radius-circ);
-    padding: 8px;
+    padding: 11px 15px 11px 15px;
     min-width: 60px;
     cursor: pointer;
 }
-
+.show-more-div{
+    width: 100%;
+    color: var(--color-blue);
+}
 .small-nav{ 
     display: none;
 }
@@ -535,7 +549,7 @@ padding: 10px;
 
 
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 1380px) {
     .logo-header{
         width: 10vw;
     }
@@ -572,7 +586,7 @@ padding: 10px;
     }
   
   }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1100px) {
       .search-news-right-side{
         display: none;
       }
