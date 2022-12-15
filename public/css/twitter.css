@@ -75,7 +75,7 @@ img,picture,svg,video,i{
 
 .header-absolute{
     position: absolute;
-    /* width: 100%; */
+   
     height: 100%;
 }
 .header-fixed{
@@ -142,10 +142,7 @@ img,picture,svg,video,i{
     width: clamp(70px,50%,94px);
  
 }
-/* .tweet-btn-div{
-    width: 90%;
-   
-} */
+
 .tweetBtn{
     margin-top: 10px;
     margin-left: 10px   ;
@@ -257,7 +254,6 @@ img,picture,svg,video,i{
 
 .buttons-tweet{
     display: flex;
-    /* justify-content: space-evenly; */
     align-items: center;
 }
 .buttons-icons{
@@ -289,7 +285,7 @@ width: 100%;
 .tweet-wrapper{
     display: flex;
     border-bottom: var(--border-line);
-    /* padding: 20px; */
+    
 }
 .profileImage{
     width: 70px;
@@ -377,8 +373,6 @@ width: 100%;
 }
 
 .search-news-right-side{
-    /* max-width: 270px;  */
-    /* comeback */
     display: flex;
     flex-direction: column;
     padding: 5px;
